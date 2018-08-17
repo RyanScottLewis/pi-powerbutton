@@ -1,8 +1,9 @@
-SCRIPT = src/pi-powerbutton
-UNIT   = src/pi-powerbutton.service
+NAME   = pi-powerbutton
+SCRIPT = src/$(NAME)
+UNIT   = src/$(NAME).service
 
-SCRIPT_DEST = $(DESTDIR)/usr/bin/
-UNIT_DEST   = $(DESTDIR)/usr/lib/systemd/system/
+SCRIPT_DEST = $(DESTDIR)/usr/bin/$(NAME)
+UNIT_DEST   = $(DESTDIR)/usr/lib/systemd/system/$(NAME).service
 
 install:
 	install -D -m 755 $(SCRIPT) $(SCRIPT_DEST)
