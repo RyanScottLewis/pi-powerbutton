@@ -10,13 +10,15 @@ pin interrupt on BCM 3.
 ### Install
 
 ```sh
-sudo make install   # SystemD unit will be enabled/started automatically
+sudo make install
+systemctl start pi-powerbutton # Or reboot
 ```
 
 ### Uninstall
 
 ```sh
-sudo make uninstall # SystemD unit will be disabled/stopped automatically
+systemctl stop pi-powerbutton  # Or reboot after uninstall
+sudo make uninstall
 ```
 
 ### Destination
