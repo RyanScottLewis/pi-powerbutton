@@ -5,7 +5,7 @@ SCRIPT_DEST = $(DESTDIR)/usr/bin
 UNIT_DEST   = $(DESTDIR)/usr/lib/systemd/system
 
 install:
-	@echo install -D -m 644 $(SCRIPT) $(SCRIPT_DEST)
+	@echo install -D -m 755 $(SCRIPT) $(SCRIPT_DEST)
 	@echo install -D -m 644 $(UNIT) $(UNIT_DEST)
 	@echo systemctl enable $(notdir $(UNIT))
 	@echo systemctl start $(notdir $(UNIT))
