@@ -31,3 +31,7 @@ Note that `make` can be passed `DESTDIR` to install/uninstall to/from a specific
 make DESTDIR=/my/system install
 make DESTDIR=/my/system uninstall
 ```
+
+## TODO
+
+* Ditch Python and create a Linux kernel modules
