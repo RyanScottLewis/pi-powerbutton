@@ -1,0 +1,10 @@
+[Unit]
+Description=Power Button
+
+[Service]
+ExecStart=/usr/bin/pi-powerbutton
+Restart=always
+
+[Install]
+WantedBy=default.target
+
