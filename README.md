@@ -11,13 +11,15 @@ pin interrupt on BCM 3.
 
 ```sh
 sudo make install
-systemctl start pi-powerbutton # Or reboot
+systemctl enable pi-powerbutton
+systemctl start pi-powerbutton   # Or reboot
 ```
 
 ### Uninstall
 
 ```sh
-systemctl stop pi-powerbutton  # Or reboot after uninstall
+systemctl stop pi-powerbutton    # Or reboot after uninstall
+systemctl disable pi-powerbutton
 sudo make uninstall
 ```
 
