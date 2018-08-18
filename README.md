@@ -32,6 +32,3 @@ make DESTDIR=/my/system install
 make DESTDIR=/my/system uninstall
 ```
 
-## TODO
-
-* Ditch Python and create a Linux kernel modules
