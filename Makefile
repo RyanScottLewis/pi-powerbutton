@@ -10,8 +10,7 @@ install:
 	install -D -m 644 $(UNIT) $(UNIT_DEST)
 
 uninstall:
-	rm $(UNIT_DEST)/$(notdir $(UNIT))
-	rm $(SCRIPT_DEST)/$(notdir $(SCRIPT))
+	rm $(UNIT_DEST) $(SCRIPT_DEST)
 
 list:
 	@echo "install      Install the script to the system"
